@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import Score from "./Score";
 import Question from "./Question";
 import FinalScore from "./FinalScore";
-import { FaEdit } from "react-icons/fa";
 import Timer from "./Timer";
 
 const QuizeHome = () => {
@@ -93,9 +92,9 @@ const QuizeHome = () => {
   }, [userName, currentQuestion, score]);
 
   // user name edit handler
-  const userNameEdit = () => {};
+
   return (
-    <div className="max-w-2xl mx-auto h-screen flex flex-col justify-center">
+    <div className="max-w-2xl mx-auto h-screen flex flex-col justify-center ">
       <h2 className="text-dark text-4xl mb-10 text-center">Quizes</h2>
 
       {!userName && (
@@ -125,19 +124,11 @@ const QuizeHome = () => {
 
       {userName && (
         <div className="">
-          <p className="text-center text-lg font-medium">
+          <p className="text-center text-lg font-medium relative">
             Hello,{" "}
-            <span className="font-bold text-xl relative ">
-              {userName}
-              <span
-                onClick={() => userNameEdit()}
-                className="absolute right-[-24px] cursor-pointer"
-              >
-                {" "}
-                <FaEdit></FaEdit>
-              </span>
-            </span>
+            <span className="font-bold text-xl relative ">{userName}</span>
           </p>
+
           <Score score={score} />
           {showResult ? (
             <FinalScore

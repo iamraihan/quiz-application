@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const Timer = ({ showResult }) => {
-  const initialMinute = 5;
+  const initialMinute = 10;
   const initialSeconds = 0;
 
   const [minutes, setMinutes] = useState(initialMinute);
@@ -45,7 +45,7 @@ const Timer = ({ showResult }) => {
           {minutes === 0 && seconds === 0 ? null : (
             <h1 className="text-lg font-bold">
               {" "}
-              {minutes}:{seconds < 5 ? `0${seconds}` : seconds}
+              {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
             </h1>
           )}
         </div>
