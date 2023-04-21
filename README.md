@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Quiz App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Site [https://wonderful-fairy-399628.netlify.app/](https://wonderful-fairy-399628.netlify.app/).
 
 ## Available Scripts
 
